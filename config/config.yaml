@@ -6,3 +6,15 @@ data_ingestion:
   source_URL: https://github.com/ParitoshVyawahare/Student-Performance-Azure-deployment/raw/refs/heads/main/archive%20(12).zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+
+data_validation:
+  root_dir: artifacts/data_validation
+  unzip_data_dir: artifacts/data_ingestion/WineQT.csv
+  STATUS_FILE: artifacts/data_validation/status.txt
+
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/WineQT.csv
+  drop_column: "Id"
