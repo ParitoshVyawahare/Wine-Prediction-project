@@ -82,6 +82,8 @@ This ensures continuous integration and continuous delivery of model updates.
 - Performance: (Add your result)
 
 ---
+## 🌟 Architecture
+<img width="539" height="239" alt="architecture" src="https://github.com/user-attachments/assets/9bd4a654-727f-408e-9f17-65ef16e34dfb" />
 
 ## 🌟 Highlights
 
