@@ -1,121 +1,100 @@
-# End-to-end-ML-Project
+# 🍷 Wine Quality Prediction – Production-Ready ML System
 
+## 🚀 Overview
 
-## Workflows
+This project is a production-grade end-to-end Machine Learning system that predicts wine quality using physicochemical attributes.
 
-1. update config.yaml
-2. update schema.yaml
-3. update params.yaml
-4. update the entity 
-5. update the configuration manager in src config
-6. update the components
-7. update the pipeline
-8. update the main.py
-9. update the app.py
+It demonstrates how to design, train, containerize, and deploy an ML model to the cloud using modern DevOps and MLOps practices.
 
-# How to run?
-### STEPS:
+---
 
+## 🧠 Problem Statement
 
-```bash
-conda create -n mlproj python=3.8 -y 
+Predict wine quality based on chemical properties such as acidity, sugar content, pH, sulphates, and alcohol level.
+
+The objective is to transform raw tabular data into a scalable and deployable ML service.
+
+---
+
+## 🏗️ System Architecture
+
+```
+Data Ingestion  
+      ↓  
+Data Validation  
+      ↓  
+Data Transformation  
+      ↓  
+Model Training & Evaluation  
+      ↓  
+Flask API  
+      ↓  
+Docker Container  
+      ↓  
+AWS ECR  
+      ↓  
+AWS EC2 (Production Deployment)
 ```
 
-```bash
-conda activate mlproj
-```
+---
 
+## ⚙️ Core Components
 
-```bash
-pip install -r requirements.txt
-```
+- Modular ML pipeline (config-driven architecture)
+- Schema validation and parameter management
+- Model training & evaluation
+- REST API using Flask
+- Dockerized application
+- CI/CD automation using GitHub Actions
+- Cloud deployment using AWS (ECR + EC2)
 
-```bash
-python app.py
-```
+---
 
-```bash
-Now open up your local host 0.0.0.0:8080
-```
+## ☁️ Deployment Strategy
 
+- Docker image built via GitHub Actions
+- Image pushed to AWS Elastic Container Registry (ECR)
+- EC2 instance configured as self-hosted runner
+- Automated container deployment on push to main branch
 
+This ensures continuous integration and continuous delivery of model updates.
 
-# AWS-CICD-Deployment-with-Github-Actions
+---
 
-## 1. Login to AWS console.
+## 🛠️ Tech Stack
 
-## 2. Create IAM user for deployment
+- Python
+- Scikit-learn
+- Pandas / NumPy
+- Flask
+- Docker
+- AWS EC2
+- AWS ECR
+- GitHub Actions
+- YAML-based configuration system
 
-	#with specific access
+---
 
-	1. EC2 access : It is virtual machine
+## 📊 Model Performance
 
-	2. ECR: Elastic Container registry to save your docker image in aws
+- Model: (Add your model name)
+- Metric: (Accuracy / RMSE / R²)
+- Performance: (Add your result)
 
+---
 
-	#Description: About the deployment
+## 🌟 Highlights
 
-	1. Build docker image of the source code
+- Production-ready ML architecture
+- Fully automated CI/CD pipeline
+- Cloud deployment with containerization
+- Scalable and modular design
+- Real-world DevOps integration for ML systems
 
-	2. Push your docker image to ECR
+---
 
-	3. Launch Your EC2 
+## 👨‍💻 Author
 
-	4. Pull Your image from ECR in EC2
-
-	5. Lauch your docker image in EC2
-
-	#Policy:
-
-	1. AmazonEC2ContainerRegistryFullAccess
-
-	2. AmazonEC2FullAccess
-
-	
-## 3. Create ECR repo to store/save docker image
-    - Save the URI: 136566696263.dkr.ecr.us-east-1.amazonaws.com/mlproject
-
-	
-## 4. Create EC2 machine (Ubuntu) 
-
-## 5. Open EC2 and Install docker in EC2 Machine:
-	
-	
-	#optinal
-
-	sudo apt-get update -y
-
-	sudo apt-get upgrade
-	
-	#required
-
-	curl -fsSL https://get.docker.com -o get-docker.sh
-
-	sudo sh get-docker.sh
-
-	sudo usermod -aG docker ubuntu
-
-	newgrp docker
-	
-# 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
-
-
-# 7. Setup github secrets:
-
-    AWS_ACCESS_KEY_ID=
-
-    AWS_SECRET_ACCESS_KEY=
-
-    AWS_REGION = us-east-1
-
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
-
-    ECR_REPOSITORY_NAME = simple-app
-
-
-
-
-
-
- git config --global user.name "entbappy"
+**Paritosh Vyawahare**  
+Master’s in Data Analytics Engineering  
+Northeastern University
