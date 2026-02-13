@@ -83,7 +83,8 @@ This ensures continuous integration and continuous delivery of model updates.
 
 ---
 ## 🌟 Architecture
-<img width="539" height="239" alt="architecture" src="https://github.com/user-attachments/assets/9bd4a654-727f-408e-9f17-65ef16e34dfb" />
+![Uploading ChatGPT Image Feb 13, 2026, 06_53_17 PM.png…]()
+
 
 ## 🌟 Highlights
 
