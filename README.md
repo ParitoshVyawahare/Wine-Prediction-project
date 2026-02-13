@@ -1,4 +1,4 @@
-# 🍷 Wine Quality Prediction – Production-Ready ML System
+<img width="1536" height="1024" alt="ChatGPT Image Feb 13, 2026, 06_53_17 PM" src="https://github.com/user-attachments/assets/a3f38cb6-9523-452b-aa79-8ed3bfb84e26" /># 🍷 Wine Quality Prediction – Production-Ready ML System
 
 ## 🚀 Overview
 
@@ -83,7 +83,8 @@ This ensures continuous integration and continuous delivery of model updates.
 
 ---
 ## 🌟 Architecture
-![Uploading ChatGPT Image Feb 13, 2026, 06_53_17 PM.png…]()
+
+
 
 
 ## 🌟 Highlights
